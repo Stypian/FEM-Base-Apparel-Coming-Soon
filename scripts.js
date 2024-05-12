@@ -4,7 +4,7 @@ onload = function() {
     const errorIcon = document.querySelector(".base-app__error-icon");
     const emailInput = document.querySelector(".base-app__email");
     const errorMessage = document.querySelector(".base-app__error-message");
-    let emailEx = /^([a-zA-Z0-9\.\-\\_\]+)@([a-zA-Z0-9-]+).([a-z]{2,3})$/;
+    let emailEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const showErrors = [errorIcon, errorMessage];
 
     function errorShow() {
